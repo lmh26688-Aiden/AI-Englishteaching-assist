@@ -1,0 +1,11 @@
+<script>
+fetch('http://quickform.cn/api/pzoqndxqpd', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+        "appId": "ai_grader_app",
+        "type": "ADMIN_CONFIG",
+        "data": { "inviteCode": "sdfztest" }
+    })
+}).then(res => alert('发送成功！')).catch(err => alert('还是失败: ' + err));
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear LocalStorage</title>
+</head>
+<body>
+    <h1>Clear LocalStorage</h1>
+    <button onclick="clearStorage()">Clear LocalStorage</button>
+    <div id="message"></div>
+    
+    <script>
+        function clearStorage() {
+            localStorage.removeItem('app_error_books');
+            localStorage.removeItem('app_red_pen_tasks');
+            localStorage.removeItem('app_assignments');
+            localStorage.removeItem('app_essay_tasks');
+            localStorage.removeItem('app_classes');
+            document.getElementById('message').textContent = 'LocalStorage cleared successfully!';
+        }
+    </script>
+</body>
+</html>
